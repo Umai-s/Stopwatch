@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+    <link rel="shortcut icon" type="image/png" href="images/watch.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body style="background-color: #f5b676">
+    <div class="position">
+        <div class="greybg">
+        </div>
+        <div class="imagebox">
+            <p>
+                <br>
+                <br>
+                <br>
+                <span class="display-4">StopWatch</span>
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="mx-auto clk">
+                    <div class="mx-auto">
+                        <img class="img-fluid mt-5" src="images/watch.png" alt="">
+                        <div class="centered">
+                            <h1 id="min" class="text text-center">0</h1>
+                            <i class="fa fa-ellipsis-v" aria-hidden="true" style="font-size: 23px;"></i>
+                            <h1 id="sec" class="text text-center">0</h1>
+                            <i class="fa fa-ellipsis-v pr-2" aria-hidden="true" style="font-size: 23px;"></i>
+                            <h1 id="msec" class="text text-center"> 0</h1>
+
+                            <div class="bt">
+                                <button type="button" class="btn btn-danger" onclick="start()" id='button'><i
+                                        class="fa fa-play" aria-hidden="true"></i> Start</button>
+                                <button type="button" class="btn btn-danger" onclick="stop()"><i class="fa fa-stop"
+                                        aria-hidden="true"></i>
+                                    Stop</button>
+                                <button type="button" class="btn btn-danger" onclick="reset()">
+                                    <i class="fa fa-repeat" aria-hidden="true"></i>
+                                    Reset</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <script type="text/javascript" src="app.js"></script>
+                <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                    crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                    crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+                    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+                    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
